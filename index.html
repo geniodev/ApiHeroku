@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="brython.js"></script>
+<script type="text/javascript" src="brython_stdlib.js"></script>
+</head>
+
+<body onload="brython(1)">
+
+
+    <div id="increment">
+        <!-- b-on é o meso do html onclick, onchange,...   passa entre aspa CHANGE que é mudança, depois : e passa a formula que vai ser executada no python -->
+        <input type='button' name='button' value='+1' b-on="click:incr" required><br>  <!--Botao-->
+        {counter}
+        <!-- Acima é o que vai mostrar, tipo texto na tela -->
+    </div>
+
+
+
+
+<!-- Citação de um arquivo Pyhton -->
+<script type="text/python" src="contador.py"></script>
+</body>
+
+</html>
